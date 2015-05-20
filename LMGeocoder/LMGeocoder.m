@@ -8,8 +8,8 @@
 
 #import "LMGeocoder.h"
 
-#define kGoogleAPIReverseGeocodingURL(lat, lng) [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=true", lat, lng];
-#define kGoogleAPIGeocodingURL(address)         [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true", address];
+#define kGoogleAPIReverseGeocodingURL(lat, lng) [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f&sensor=true&language=en", lat, lng];
+#define kGoogleAPIGeocodingURL(address)         [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=false&language=en", address];
 #define kTimeoutInterval 60
 
 @interface LMGeocoder ()
