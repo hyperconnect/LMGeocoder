@@ -12,8 +12,8 @@ s.author            = {
 'LMinh' => 'lminhtm@gmail.com'
 }
 s.source            = {
-:git => 'https://github.com/lminhtm/LMGeocoder.git',
-:tag => s.version.to_s
+:git => 'https://github.com/hyperconnect/LMGeocoder.git',
+:branch => 'hpcnt'
 }
 s.source_files      = 'LMGeocoder/*.{m,h}'
 s.requires_arc      = true
