@@ -130,6 +130,10 @@ static NSString *const LMCountryCodeKey         = @"countryCode";
 - (NSString *)component:(NSString *)component inArray:(NSArray *)array ofType:(NSString *)type
 {
 	NSInteger index = [array indexOfObjectPassingTest:^(id obj, NSUInteger idx, BOOL *stop){
+        // FIXED by dgoon
+        if ([[obj objectForKey:@"types"] firstObject] == NULL) {
+            return NO;
+        }
         return [(NSString *)([[obj objectForKey:@"types"] objectAtIndex:0]) isEqualToString:component];
 	}];
 	

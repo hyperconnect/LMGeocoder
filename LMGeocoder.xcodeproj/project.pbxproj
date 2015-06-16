@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CCB2B971B301D5600312B0F /* LMGeocoder_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCB2B961B301D5600312B0F /* LMGeocoder_Tests.swift */; };
+		2CCB2B981B301D5600312B0F /* LMGeocoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7814AF1B0DF071009AB924 /* LMGeocoder.framework */; };
 		FB7814D11B0DF0A8009AB924 /* LMAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7814CD1B0DF0A8009AB924 /* LMAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7814D21B0DF0A8009AB924 /* LMAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7814CE1B0DF0A8009AB924 /* LMAddress.m */; };
 		FB7814D31B0DF0A8009AB924 /* LMGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7814CF1B0DF0A8009AB924 /* LMGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7814D41B0DF0A8009AB924 /* LMGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7814D01B0DF0A8009AB924 /* LMGeocoder.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2CCB2B991B301D5600312B0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7814A61B0DF071009AB924 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7814AE1B0DF071009AB924;
+			remoteInfo = LMGeocoder;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2CCB2B921B301D5600312B0F /* LMGeocoder Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LMGeocoder Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCB2B951B301D5600312B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CCB2B961B301D5600312B0F /* LMGeocoder_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMGeocoder_Tests.swift; sourceTree = "<group>"; };
 		FB7814AF1B0DF071009AB924 /* LMGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7814B31B0DF071009AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB7814C01B0DF071009AB924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,6 +41,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2CCB2B8F1B301D5600312B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCB2B981B301D5600312B0F /* LMGeocoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB7814AB1B0DF071009AB924 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,12 +59,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CCB2B931B301D5600312B0F /* LMGeocoder Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB2B961B301D5600312B0F /* LMGeocoder_Tests.swift */,
+				2CCB2B941B301D5600312B0F /* Supporting Files */,
+			);
+			path = "LMGeocoder Tests";
+			sourceTree = "<group>";
+		};
+		2CCB2B941B301D5600312B0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CCB2B951B301D5600312B0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FB7814A51B0DF071009AB924 = {
 			isa = PBXGroup;
 			children = (
 				FBBEBADE1B1710C5002953AB /* README.md */,
 				FB7814B11B0DF071009AB924 /* LMGeocoder */,
 				FB7814BE1B0DF071009AB924 /* LMGeocoderTests */,
+				2CCB2B931B301D5600312B0F /* LMGeocoder Tests */,
 				FB7814B01B0DF071009AB924 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7814AF1B0DF071009AB924 /* LMGeocoder.framework */,
+				2CCB2B921B301D5600312B0F /* LMGeocoder Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +140,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2CCB2B911B301D5600312B0F /* LMGeocoder Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CCB2B9E1B301D5600312B0F /* Build configuration list for PBXNativeTarget "LMGeocoder Tests" */;
+			buildPhases = (
+				2CCB2B8E1B301D5600312B0F /* Sources */,
+				2CCB2B8F1B301D5600312B0F /* Frameworks */,
+				2CCB2B901B301D5600312B0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CCB2B9A1B301D5600312B0F /* PBXTargetDependency */,
+			);
+			name = "LMGeocoder Tests";
+			productName = "LMGeocoder Tests";
+			productReference = 2CCB2B921B301D5600312B0F /* LMGeocoder Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FB7814AE1B0DF071009AB924 /* LMGeocoder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB7814C51B0DF071009AB924 /* Build configuration list for PBXNativeTarget "LMGeocoder" */;
@@ -125,6 +185,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Hyperconnect;
 				TargetAttributes = {
+					2CCB2B911B301D5600312B0F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					FB7814AE1B0DF071009AB924 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -143,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				FB7814AE1B0DF071009AB924 /* LMGeocoder */,
+				2CCB2B911B301D5600312B0F /* LMGeocoder Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2CCB2B901B301D5600312B0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB7814AD1B0DF071009AB924 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +229,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2CCB2B8E1B301D5600312B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCB2B971B301D5600312B0F /* LMGeocoder_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FB7814AA1B0DF071009AB924 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,7 +248,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2CCB2B9A1B301D5600312B0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7814AE1B0DF071009AB924 /* LMGeocoder */;
+			targetProxy = 2CCB2B991B301D5600312B0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2CCB2B9B1B301D5600312B0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LMGeocoder Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CCB2B9C1B301D5600312B0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LMGeocoder Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2CCB2B9D1B301D5600312B0F /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LMGeocoder Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = QA;
+		};
 		FB7814C31B0DF071009AB924 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,6 +481,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2CCB2B9E1B301D5600312B0F /* Build configuration list for PBXNativeTarget "LMGeocoder Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCB2B9B1B301D5600312B0F /* Debug */,
+				2CCB2B9C1B301D5600312B0F /* Release */,
+				2CCB2B9D1B301D5600312B0F /* QA */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FB7814A91B0DF071009AB924 /* Build configuration list for PBXProject "LMGeocoder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
