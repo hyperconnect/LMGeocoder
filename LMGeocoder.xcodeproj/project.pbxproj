@@ -182,6 +182,7 @@
 		FB7814A61B0DF071009AB924 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Hyperconnect;
 				TargetAttributes = {
