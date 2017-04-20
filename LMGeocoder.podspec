@@ -13,7 +13,7 @@ s.author            = {
 }
 s.source            = {
 :git => 'https://github.com/hyperconnect/LMGeocoder.git',
-:branch => 'hpcnt'
+:branch => 'cocoapods'
 }
 s.source_files      = 'LMGeocoder/*.{m,h}'
 s.requires_arc      = true
