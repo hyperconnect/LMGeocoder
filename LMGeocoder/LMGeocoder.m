@@ -134,7 +134,9 @@
         {
             CLLocation *location = [[CLLocation alloc] initWithLatitude:self.requestedCoordinate.latitude
                                                               longitude:self.requestedCoordinate.longitude];
+            NSLocale* engLocale = [[NSLocale alloc] initWithLocalIdentifier: @"en_US"];
             [self.appleGeocoder reverseGeocodeLocation:location
+                                     preferredLocale:engLocale
                                      completionHandler:^(NSArray *placemarks, NSError *error) {
                                          
                                          if (!error && placemarks) {
