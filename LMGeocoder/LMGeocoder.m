@@ -134,18 +134,36 @@
         {
             CLLocation *location = [[CLLocation alloc] initWithLatitude:self.requestedCoordinate.latitude
                                                               longitude:self.requestedCoordinate.longitude];
-            [self.appleGeocoder reverseGeocodeLocation:location
-                                     completionHandler:^(NSArray *placemarks, NSError *error) {
-                                         
-                                         if (!error && placemarks) {
-                                             [self parseGeocodingResultData:placemarks];
-                                         }
-                                         else {
-                                             if (self.completionHandler) {
-                                                 self.completionHandler(nil, error);
+
+            if (@available(iOS 11, *)) {
+                NSLocale* engLocale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
+                [self.appleGeocoder reverseGeocodeLocation:location
+                                           preferredLocale:engLocale
+                                         completionHandler:^(NSArray *placemarks, NSError *error) {
+
+                                             if (!error && placemarks) {
+                                                 [self parseGeocodingResultData:placemarks];
                                              }
-                                         }
-                                     }];
+                                             else {
+                                                 if (self.completionHandler) {
+                                                     self.completionHandler(nil, error);
+                                                 }
+                                             }
+                                         }];
+            } else {
+                [self.appleGeocoder reverseGeocodeLocation:location
+                                         completionHandler:^(NSArray *placemarks, NSError *error) {
+
+                                             if (!error && placemarks) {
+                                                 [self parseGeocodingResultData:placemarks];
+                                             }
+                                             else {
+                                                 if (self.completionHandler) {
+                                                     self.completionHandler(nil, error);
+                                                 }
+                                             }
+                                         }];
+            }
         }
     }
 }
