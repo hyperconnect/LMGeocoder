@@ -11,11 +11,12 @@ s.license           = {
 s.author            = {
 'LMinh' => 'lminhtm@gmail.com'
 }
+s.platform          = :ios, "13.0"
 s.source            = {
 :git => 'https://github.com/hyperconnect/LMGeocoder.git',
 :branch => 'cocoapods'
 }
-s.source_files      = 'LMGeocoder/*.{m,h}'
+s.source_files      = 'sources/LMGeocoder/**/*.{m,h}'
 s.requires_arc      = true
 
 end
